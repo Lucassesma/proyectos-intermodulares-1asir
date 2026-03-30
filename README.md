@@ -3,7 +3,7 @@
 Bienvenido al repositorio del **Proyecto Intermodular de 1º de ASIR**. El proyecto Intermodular es una propuesta integral para el diseño, despliegue y documentación de una infraestructura tecnológica completa para una empresa.
 
 ## 📝 Descripción del Proyecto
-Este proyecto simula la creación de la infraestructura IT para [sesmAI : Una empresa de investigación tecnológica]. El objetivo es integrar los conocimientos de todos los módulos del primer año para ofrecer una solución profesional, escalable y segura.
+Este proyecto simula la creación de la infraestructura IT para sesmAI : Una empresa de investigación tecnológica. El objetivo es integrar los conocimientos de todos los módulos del primer año para ofrecer una solución profesional, escalable y segura.
 
 
 ---
