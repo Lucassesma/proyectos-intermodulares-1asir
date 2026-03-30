@@ -4,7 +4,7 @@ Este directorio contiene toda la implementación física y lógica de la base de
 
 ## 📄 Documentación Incluida
 * **Análisis de los datos.pdf**: Explicación del caso de uso y necesidades del cliente.
-* **Modelo_relacional.drawio**: Diseño de la base de datos (entidades y relaciones).
+* **Modelo_relacional.drawio**: Diseño de la base de datos (tablas).
 * **Scripts BBDD.pdf**: Código fuente completo (DDL, DML y DQL).
 * **Tareas de administración.pdf**: Guía sobre seguridad, usuarios y backups.
 
