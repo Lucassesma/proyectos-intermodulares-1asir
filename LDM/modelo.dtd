@@ -1,0 +1,32 @@
+<!ELEMENT gestion_tickets (clientes, tecnicos, tickets)>
+
+<!ELEMENT clientes (cliente+)>
+<!ELEMENT cliente (nombre_empresa, dni_cif, contacto)>
+<!ATTLIST cliente id_cliente ID #REQUIRED>
+
+<!ELEMENT nombre_empresa (#PCDATA)>
+<!ELEMENT dni_cif (#PCDATA)>
+<!ELEMENT contacto (telefono, email)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+
+<!ELEMENT tecnicos (tecnico+)>
+<!ELEMENT tecnico (nombre, apellidos, especialidad, email_empresa)>
+<!ATTLIST tecnico id_tecnico ID #REQUIRED>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT especialidad (#PCDATA)>
+<!ELEMENT email_empresa (#PCDATA)>
+
+<!ELEMENT tickets (ticket*)>
+<!ELEMENT ticket (asunto, fecha_apertura)>
+<!ATTLIST ticket 
+          id_ticket ID #REQUIRED
+          ref_tecnico IDREF #REQUIRED
+          ref_cliente IDREF #REQUIRED
+          estado (Abierto | En_proceso | Cerrado) "Abierto"
+          prioridad (Baja | Media | Alta) #REQUIRED>
+
+<!ELEMENT asunto (#PCDATA)>
+<!ELEMENT fecha_apertura (#PCDATA)>

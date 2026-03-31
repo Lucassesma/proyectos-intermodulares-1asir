@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="transform.xsl"?>
+<!DOCTYPE gestion_tickets SYSTEM "modelo.dtd">
+
+<gestion_tickets>
+    
+    <clientes>
+        <cliente id_cliente="C1">
+            <nombre_empresa>Tech Asturias S.L.</nombre_empresa>
+            <dni_cif>B12345678</dni_cif>
+            <contacto>
+                <telefono>600111222</telefono>
+                <email>contacto@techasturias.es</email>
+            </contacto>
+        </cliente>
+        <cliente id_cliente="C2">
+            <nombre_empresa>Global CyberSec</nombre_empresa>
+            <dni_cif>A98765432</dni_cif>
+            <contacto>
+                <telefono>611222333</telefono>
+                <email>info@gcybersec.com</email>
+            </contacto>
+        </cliente>
+    </clientes>
+
+    <tecnicos>
+        <tecnico id_tecnico="T1">
+            <nombre>Lucas</nombre>
+            <apellidos>Sesma</apellidos>
+            <especialidad>Ciberseguridad</especialidad>
+            <email_empresa>lsesma@sesmai.com</email_empresa>
+        </tecnico>
+        <tecnico id_tecnico="T2">
+            <nombre>Ana</nombre>
+            <apellidos>García</apellidos>
+            <especialidad>Administración Cloud</especialidad>
+            <email_empresa>agarcia@sesmai.com</email_empresa>
+        </tecnico>
+    </tecnicos>
+
+<tickets>
+        <ticket id_ticket="TK1" ref_tecnico="T1" ref_cliente="C1" estado="En_proceso" prioridad="Alta">
+            <asunto>Caída del firewall principal</asunto>
+            <fecha_apertura>2026-03-30</fecha_apertura>
+        </ticket>
+        
+        <ticket id_ticket="TK2" ref_tecnico="T2" ref_cliente="C2" estado="Abierto" prioridad="Media">
+            <asunto>Configuración de nuevas cuentas AWS</asunto>
+            <fecha_apertura>2026-03-31</fecha_apertura>
+        </ticket>
+
+        <ticket id_ticket="TK3" ref_tecnico="T1" ref_cliente="C2" estado="Cerrado" prioridad="Baja">
+            <asunto>Auditoría de puertos de red</asunto>
+            <fecha_apertura>2026-03-25</fecha_apertura>
+        </ticket>
+    </tickets>
+</gestion_tickets>

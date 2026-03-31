@@ -1,0 +1,69 @@
+{
+  "gestion_tickets": {
+    "clientes": [
+      {
+        "id_cliente": "C1",
+        "nombre_empresa": "Tech Asturias S.L.",
+        "dni_cif": "B12345678",
+        "contacto": {
+          "telefono": "600111222",
+          "email": "contacto@techasturias.es"
+        }
+      },
+      {
+        "id_cliente": "C2",
+        "nombre_empresa": "Global CyberSec",
+        "dni_cif": "A98765432",
+        "contacto": {
+          "telefono": "611222333",
+          "email": "info@gcybersec.com"
+        }
+      }
+    ],
+    "tecnicos": [
+      {
+        "id_tecnico": "T1",
+        "nombre": "Lucas",
+        "apellidos": "Sesma",
+        "especialidad": "Ciberseguridad",
+        "email_empresa": "lsesma@sesmai.com"
+      },
+      {
+        "id_tecnico": "T2",
+        "nombre": "Ana",
+        "apellidos": "García",
+        "especialidad": "Administración Cloud",
+        "email_empresa": "agarcia@sesmai.com"
+      }
+    ],
+    "tickets": [
+      {
+        "id_ticket": "TK1",
+        "ref_tecnico": "T1",
+        "ref_cliente": "C1",
+        "estado": "En proceso",
+        "prioridad": "Alta",
+        "asunto": "Caída del firewall principal",
+        "fecha_apertura": "2026-03-30"
+      },
+      {
+        "id_ticket": "TK2",
+        "ref_tecnico": "T2",
+        "ref_cliente": "C2",
+        "estado": "Abierto",
+        "prioridad": "Media",
+        "asunto": "Configuración de nuevas cuentas AWS",
+        "fecha_apertura": "2026-03-31"
+      },
+      {
+        "id_ticket": "TK3",
+        "ref_tecnico": "T1",
+        "ref_cliente": "C2",
+        "estado": "Cerrado",
+        "prioridad": "Baja",
+        "asunto": "Auditoría de puertos de red",
+        "fecha_apertura": "2026-03-25"
+      }
+    ]
+  }
+}
